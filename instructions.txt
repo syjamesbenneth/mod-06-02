@@ -1,0 +1,85 @@
+1. when a color is clicked it should change the color of a box
+red - 1st box
+yellow 2nd bow etc
+2. when blue is clicked all boxes should be blue
+
+xxxx
+syntax;
+if (condition/s) {
+	do if true;
+} else {
+	do if false
+}
+
+xxxx
+what we want 
+an if else that prints the following if the number is between 5 and 10 alert "hello"
+if not alert "world"
+xxx
+
+what we want:
+create an input type number and a button
+that when the button is clicked. determine if the number in the field is odd or even
+
+1. alert the follow: <number> is ODD or <number> is EVEN
+2. use internal javascript
+stretch goals:
+1. place the output in a span
+2. use external javascript
+xxx
+find out if a number is divisible by 3 or 5
+a. divisible by 3 only
+b. divisible by 5 only
+c. divisible by 3 and 5
+d. not divisible by both
+
+let num = 5;
+if(i % 3 == 0 && i % 5 == 0) {
+	alert (num + " is divisible by 3 and 5")
+
+}
+
+xxx
+
+1.create a new file named leap_year.html
+2.create a number field and a button.
+3.when a button is clicked, determine if year is a leap year or not
+4.Use internal js -> result in a spam
+5.use google to find out the formula
+6.Use if else and nested ifs as needed.
+stetch goal
+1. try using a single if statement and logical operators
+
+xxx
+
+Compute average of student and give a rating
+
+1.create student_grade.html
+2. create field for the following and a button to get average:
+capstone 1 capstone 2 capstone 3 Portfolio
+3.computer for the average using the following weights:
+- CP 1: 25%
+- CP 2: 30%
+- CP 3: 40%
+Portfolio: 5%
+Attendance 5%
+4. Display the average and the rating:
+100 to 90 - A
+89 to 80 - B
+79 - 70 - C
+69 to 60 - D
+59 to 50 - E
+0 to 49 - F
+xxx
+stretch goal:
+1. Perform error checking for the input using Javascript
+No negative grades
+No grades exceeding 100%
+xxx
+2.place the grade and rating inside a textarea instead of a span
+
+xxx
+Homework
+1. Research on how to make decimal outputs into a certain length
+2 decimal places
+2. research on string functions

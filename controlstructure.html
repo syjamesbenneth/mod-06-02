@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title>Color Palette</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<title>Control Structures</title>
+
+</head>
+<body>
+
+<input type="number" name="num" id="num">
+	<button onclick="oddEven()">Click me</button>
+	<span id="result"></span>
+</input>
+
+
+
+
+	<script type="text/javascript">
+		/* exercises  */
+
+		// let x = 9;
+		// if (x > 5) {
+		// 	alert (x + " is greater than 5.")
+		// } else {
+		// 	alert (x + " is less than 5.");
+		// }
+
+		/* exercises  */
+
+		// let y = 11;
+		// if ((y > 5) && (y<10)){
+		// 	alert ("Hello");
+		// } else {
+		// 	alert("World");
+		// }
+
+	// function odd_even {
+	// 	if (nbr % 2 === 0) {
+ //        alert ("nbr" + "is EVEN.");
+ //    } else {
+ //        alert ("nbr" + "is ODD.");
+ //    	}
+	// }
+
+		const oddEven = () => {
+			let numToTest = Number(document.getElementById('num').value);
+			//.value is needed to get user input from the field
+			// alert(numToTest);
+			let result = numToTest % 2;
+			if (result == 0) {
+				document.getElementById('result').innerHTML = numToTest + " is even.";
+			} else {
+				document.getElementById('result').innerHTML = numToTest + " is odd.";
+			}
+		}
+
+	</script>
+
+</body>
+</html>

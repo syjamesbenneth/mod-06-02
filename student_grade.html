@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<title>Color Palette</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<title>Student Grades</title>
+</head>
+<body>
+
+	<label for ="cap1">Capstone 1: </label> 
+	<input type="number" name="cap1" id="cap1"/>
+	<br> 
+
+	<label for ="cap2">Capstone 2: </label> 
+	<input type="number" name="cap2" id="cap2"/>
+	<br> 
+
+	<label for ="cap3">Capstone 3: </label> 
+	<input type="number" name="cap3" id="cap3"/>
+	<br> 
+	<label for ="portfolio">Portfolio: </label> 
+	<input type="number" name="portfolio" id="portfolio"/>
+	<br> 
+	<label for ="attendance">Attendance: </label> 
+	<input type="number" name="attendance" id="attendance"/>
+	<br> 
+
+	<button onclick="getGrades()">Get Grade</button>
+	<!-- <span id="result"></span> -->
+	<textarea id="result"></textarea>
+
+	<script type="text/javascript">
+	//Getting input from fields
+		const getGrades = () => {
+			let cap1 = Number(document.getElementById('cap1').value);
+			let cap2 = Number(document.getElementById('cap2').value);
+			let cap3 = Number(document.getElementById('cap3').value);
+			let portfolio = Number(document.getElementById('portfolio').value);
+			let attendance = Number(document.getElementById('attendance').value);
+
+			//Process
+			let average = (cap1 * 0.20) + (cap2 * 0.30) + (cap3 * 0.40) + (portfolio * 0.05) + (attendance * 0.05);
+
+			//Output
+			if ((average <= 100) && (average >= 90)) {
+				document.getElementById('result').innerHTML = "Grade is " + average + ", Rating is A.";
+			} else if ((average < 90) && (average >= 80)){
+			document.getElementById('result').innerHTML = "Grade is " + average + ", Rating is B.";
+		} else if ((average < 80) && (average >= 70)) {
+			document.getElementById('result').innerHTML = "Grade is " + average + ", Rating is C.";	
+		} else if ((average < 70) && (average >= 60)) {
+			document.getElementById('result').innerHTML = "Grade is " + average + ", Rating is D.";
+		
+		} else if ((average < 60) && (average >= 50)) {
+			document.getElementById('result').innerHTML = "Grade is " + average + ", Rating is E.";
+		}
+		 else {
+			document.getElementById('result').innerHTML = "Grade is " + average + ", Rating is F.";
+		}
+	}
+
+
+// 		const getGrade = () => {
+// 		// let grade = Number(document.getElementById('grade').value);
+// 		var d = document.getElementById('cp1').value;
+// 	    var e = document.getElementById('cp2').value;
+// 	    var f = document.getElementById('cp3').value;
+// 	    var g = document.getElementById('port1').value;
+// 	    var h = document.getElementById('atten1').value;
+// 	    var avg = ((d*.2)+(e*.3)+(f*.4)+(g*.05)+(h*.05));
+
+
+
+// 	    if (avg <= 100 && >= 90) {
+// 	    	document.getElementById('result').innerHTML = Grade is A. ;
+// 	    } else if (avg <= 89 && >= 80) {
+// 	    	document.getElementById('result').innerHTML = Grade is B. ;
+// 	    } else if (avg <= 79 && >= 70) {
+// 	    	document.getElementById('result').innerHTML = Grade is C. ;
+// 	    } else if (avg <= 69 && >= 60) {
+// 	    	document.getElementById('result').innerHTML = Grade is D. ;
+// 	    } else if (avg <= 59 && >= 50) {
+// 	    	document.getElementById('result').innerHTML = Grade is E. ;
+// 	    } else if (avg <= 49 && >= 0) {
+// 	    	document.getElementById('result').innerHTML = Bagsak po. ;
+// }
+	</script>
+</body>
+</html>
